@@ -15,7 +15,7 @@ The framework is made up of 6 steps:
 5. Validation
 6. Presentation/Visualization
 
-![CRISP-DM](Screenshots/01.jpg "CRISPDM")
+![CRISP-DM](Screenshots/01.jpeg "CRISPDM")
 
 
 
