@@ -1,4 +1,4 @@
-#01 - Problem Solving with Analytics
+# 01 - Problem Solving with Analytics
 
 ## The Analytics Problem Solving Framework
 Two key analytical concepts to understand any business situation and to choose the correct techniques to analyze the data.
@@ -15,7 +15,9 @@ The framework is made up of 6 steps:
 5. Validation
 6. Presentation/Visualization
 
-![CRISP-DMy](Screenshots/01.jpg "CRISP-DM")
+![CRISP-DM](Screenshots/01.jpg "CRISPDM")
+
+
 
 ### Predictive Methodology Map
 
