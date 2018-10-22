@@ -154,10 +154,10 @@ Imagine we have the data displayed in the scatter plot. It appears that we have 
 If we know the equation of the line, we can predict values using the equation:
 
 ### y = mx + b
-Y = Target Variable
-X = Predictor Variable
-m = Slope of the line
-b = Y-intercept
+- Y = Target Variable
+- X = Predictor Variable
+- m = Slope of the line
+- b = Y-intercept
 
 #### Target Variable
 - the variable we are trying to understand and predict. It is also referred to as the dependent variable. In our example, we are trying to predict Y, or the average number of tickets.
@@ -190,7 +190,7 @@ While a strong correlation is good, we really want to know how well the data fit
 Caution about interpreting R-squared
 How you interpret R-squared depends heavily on the problem you're trying to model and the data you use. For tough problems, a very low R-squared may be acceptable. Also, a high R-squared may result from a poor model. However, in general, the higher the R-squared the better, especially as you add and remove predictor variables to determine the strongest predictive model. To read more about interpreting R-squared, see here.
 
-[insert screenshot on r2 here]
+
 
 
 
