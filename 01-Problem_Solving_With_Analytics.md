@@ -190,11 +190,13 @@ While a strong correlation is good, we really want to know how well the data fit
 Caution about interpreting R-squared
 How you interpret R-squared depends heavily on the problem you're trying to model and the data you use. For tough problems, a very low R-squared may be acceptable. Also, a high R-squared may result from a poor model. However, in general, the higher the R-squared the better, especially as you add and remove predictor variables to determine the strongest predictive model. To read more about interpreting R-squared, see here.
 
+## Multiple Linear Regression
 
+Y = β 0 + β1X1 + β2 X 2
 
+The X's represent the values for each variable. These come directly from the data. The β's come from the linear regression model. β 0 is the intercept. The other β's represent the relationship between the predictor variable X and the target variable Y.
 
-
-
+Transforming Categorical Variables
 
 
 You will then learn how to create linear regression models to help you predict numerical data such as sales. You'll dive deep into these concepts:
