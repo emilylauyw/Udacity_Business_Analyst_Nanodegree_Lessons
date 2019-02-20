@@ -1,1 +1,1 @@
-# Udacity_Business_Analyst_Nanodegree_Lessons
+# Udacity Business Analyst Nanodegree Lessons
