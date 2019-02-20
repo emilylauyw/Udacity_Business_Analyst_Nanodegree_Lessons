@@ -50,7 +50,7 @@ Semi-structured data is data that has some structure to it but still requires so
 #### Dirty Data
 Data that contains some kind of errors in them, or are in a format that's unfriendly or unusable.
 
-Example:
+Examples:
 - Not parsed correctly: last name and first name appear all in one field instead of multiple fields.
 - Extra Characters: extra characters in data fields that make it difficult to use the data readily.
 - Misspelled Entries: typos which can easily happen when typing data in manually.
@@ -58,8 +58,8 @@ Example:
 - Incorrect Data: like dates that are from January 1, 1900. This can happen when a user is working with a system that requires a value but none is available at the time.
 - Unexpected Pattern: data that does not fit with the expected pattern. Example not email addresses are in the proper format that ends with ".com".
 
-
-####
+#### Dirty Data - Parsing
+Parsing is done when dividing data into parts based on some kind of delimiter.
 
 
 
