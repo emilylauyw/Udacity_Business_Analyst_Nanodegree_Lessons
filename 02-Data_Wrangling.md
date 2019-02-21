@@ -61,6 +61,21 @@ Examples:
 #### Dirty Data - Parsing
 Parsing is done when dividing data into parts based on some kind of delimiter.
 
+Example: Comma Separated Values file (CSV) data is delimited with commas.
+
+#### Dirty Data - Extra Characters
+Extra characters could be anything, like currency symbols or number signs.
+
+Example: Quotation marks in Name, extra letter after postal code & currency sign before value
+
+#### Missing Data
+
+1. Empty fields: data comes from a CSV file
+2. Null value: data comes from a database
+3. N/A value: typically means not available in programs that we use
+
+
+
 
 
 
