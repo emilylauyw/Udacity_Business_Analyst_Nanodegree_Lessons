@@ -74,6 +74,10 @@ Example: Quotation marks in Name, extra letter after postal code & currency sign
 2. Null value: data comes from a database
 3. N/A value: typically means not available in programs that we use
 
+#### Missing Data - Why care about missing data?
+1. Some statistical algorithms won't work.
+2. Can add BIAS to a model. Which means either over or underestimate of that specific field or parameter.
+
 
 
 
