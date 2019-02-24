@@ -78,6 +78,38 @@ Example: Quotation marks in Name, extra letter after postal code & currency sign
 1. Some statistical algorithms won't work.
 2. Can add BIAS to a model. Which means either over or underestimate of that specific field or parameter.
 
+#### Missing Data - Dealing with Missing Databases
+1. Deleting Missing Data
+Deleting missing data is often the default method because of it's simplicity. No decisions that need to be made that might confuse the data. You just get rid of records where there are missing values.
+
+However, you should make sure that deleting missing data doesn't have adverse effects on your analysis. For example, if a particular demographic tended to leave a response blank in a survey, then removing records with blank entries will mean that a part of the population is underrepresented.
+
+One of the downsides is that eliminating missing data reduces the size of the dataset. As you'll see in your exercise removing records with missing values eliminates half of the observations in the dataset. This can be especially problematic when collecting the data is expensive, such as paying people for a survey.
+
+2. Imputation
+Imputation - The process of substituting values in the data where the values are missing. Replace missing values with predefined statistic, the mean, median, or mode.
+
+Mean: Average value
+Median: Midpoint in the data values
+Mode: The most common of the data values
+
+3. Multiple Imputation
+Do imputation process multiple times using a method that will predict the missing values. Typically using regression then adding in some random error.
+
+4. Full information Maximum Likelihood
+
+#### Missing Data - Factors to consider
+1. Just how much data is really missing? [more than 95% or less than?]
+2. How the missing data is distributed across the dataset? [majority of what's missing is in a smaller subset of the variables? Are they significant?]
+3. The variable in question with the missing data is numeric or categorical? [unable to imputate vaerage for non-numeric value]
+
+#### Outliers
+Outliers - Some values just don't seem to fit with the data set as a whole.
+- Numeric: numbers that seem extreme, or way too large, or small compared to the other values in that field.
+- Categorical: value that only appear once out of a large set of data.
+
+
+
 
 
 
