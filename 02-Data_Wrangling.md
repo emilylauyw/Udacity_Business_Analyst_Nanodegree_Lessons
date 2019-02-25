@@ -146,13 +146,17 @@ Example aggregate/summarize transactional data that list each product sold withi
 - Summarize other data to the values within that field
 - Create a matrix
 
-
-
-
-
-
-
-
-
 ### 4. Data Blending
 - Blend data together from disparate datasets
+
+### 1. Unions
+- Allows you to take multiple datasets and deal with them as one.
+- 2 datasets with the same fields.
+
+### 2. Joins
+- Blend multiple data sets with different data.
+
+### 3. Fuzzy Matching
+- 
+
+### 4. Spatial Matching
