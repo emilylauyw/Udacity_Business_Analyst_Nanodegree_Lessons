@@ -108,16 +108,50 @@ Outliers - Some values just don't seem to fit with the data set as a whole.
 - Numeric: numbers that seem extreme, or way too large, or small compared to the other values in that field.
 - Categorical: value that only appear once out of a large set of data.
 
+#### Outliers - What causes Outliers?
+1. Incorrect data - System issues to bad data collection methods to just plain typos when entering data.
+2. Abnormal but correct data -
 
+#### Outliers - Why do we care?
+- this can mess with our answers to our business questions, whether we're tryng to explain why something happened a certain way or what may happen in the future.
+- correct them if they're wrong or understand the exceptions that are real.
 
+#### Outliers - How to identify?
+1. Box and Whisker - the value needs to be 1.5 times the Interquartile range beyond the first and third quartile to be considered an outlier.
 
+To calculate the upper fence and the lower fence, here are the exact steps:
+1 . Calculate 1st quartile Q1 and 3rd quartile Q3 of the dataset. You can use the Excel function QUARTILE.INC or QUARTILE.EXC
+2 . Calculate the Interquartile Range: IQR = Q3 - Q1
+3 . Add 1.5 * IQR to Q3 to get the upper fence: Upper Fence = Q3 + 1.5 * IQR
+4 . Subtract 1.5 * IQR to Q1 to get the lower fence: Lower Fence = Q1 - 1.5 * IQR
 
+2. Violin Plot
 
-
+#### Outliers - How to deal with it?
+1. Remove insignificant outliers
+2. Truncation: where we know that a certain value can only be  below a given maximum and yet a value is reported above that.
 
 ### 3. Data Formatting
-- Format our data so it is useful
-- Data is often not in the format we need
+Format our data so it is useful
+Data is often not in the format we need
+
+1. Transposing Data
+Example combining sales value for multiple months into one field.
+
+2. Aggregating Data
+Example aggregate/summarize transactional data that list each product sold within one transaction as separate records.
+
+3. Cross-tabulation / Crosstab
+- Takes data within a field
+- Summarize other data to the values within that field
+- Create a matrix
+
+
+
+
+
+
+
 
 
 ### 4. Data Blending
