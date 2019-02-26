@@ -157,6 +157,8 @@ Example aggregate/summarize transactional data that list each product sold withi
 - Blend multiple data sets with different data.
 
 ### 3. Fuzzy Matching
-- 
+- identifies non-identical duplicates of a dataset by specifying parameters to match on.
+- join two data sets together where a regular join may fail.
+- looks at words and calculate a closeness of match score, based on the similarity of these words.
 
 ### 4. Spatial Matching
