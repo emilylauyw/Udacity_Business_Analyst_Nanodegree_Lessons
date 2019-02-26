@@ -154,7 +154,7 @@ Example aggregate/summarize transactional data that list each product sold withi
 - 2 datasets with the same fields.
 
 ### 2. Joins
-- Blend multiple data sets with different data.
+- Joined sets with field in common.
 
 ### 3. Fuzzy Matching
 - identifies non-identical duplicates of a dataset by specifying parameters to match on.
@@ -162,3 +162,5 @@ Example aggregate/summarize transactional data that list each product sold withi
 - looks at words and calculate a closeness of match score, based on the similarity of these words.
 
 ### 4. Spatial Matching
+- Most information has a location component to it. E.g. retail example, customers have locations where they live, locations for the stores they shop at, and locations for the distribution center from where stores get their products.
+- Use spatial data from the customer or their point locations to see if they fall within or intersect the trade area.
