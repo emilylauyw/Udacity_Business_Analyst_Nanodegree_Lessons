@@ -2,18 +2,18 @@
 
 ## Preparing Data
 
-### 1. Understanding Data
+##  1. Understanding Data
 - What are the various types of data?
 - Why is formatting important?
 
-#### Sources of Data
+### Sources of Data
 1. Transactional: like what's recorded at the supermarket for every purchase.
 2. Devices: captured from devices we use like our TV, cable boxes, or cellphones
 3. Collected: data like weather, census, or flight data.
 
 Challenge: how you can use all the data available to make your analyses as rich and powerful as possible
 
-#### Categories of Data
+### Categories of Data
 1. Structured
 Structured data are data with a high degree of organization. They are typically organized into columns and rows like in a spreadsheet. Sometimes columns are also called fields and rows are referred to as records and these terms may end up being used interchangeably throughout the course. Each column represents a variable and each row represents a record of data. Structured data is often stored in databases or files such as spreadsheets and it is usually easily accessible and most importantly, it’s easy to use.
 
@@ -23,16 +23,16 @@ Unstructured data can have no structure to it at all. Since the data isn’t org
 3. Semi-Structure
 Semi-structured data is data that has some structure to it but still requires some work to put it into a structured format of columns and rows. This could be a computer system log file that requires parsing and manipulating to put into a format that makes the data easier to analyze.
 
-#### Data Sources
+### Data Sources
 1. Computer files: created from applications like MS Excel or Access, from predictive software like SAS or SPSS.
 2. Databases
 3. Web-based sources
 
-#### Importance of Data Types
+### Importance of Data Types
 1. Doing calculations across multiple fields: assumes that we're working with numeric fields so both of the fields need to be number types.
 2. Blending data sets: field or fields we're joining on to be the same data type
 
-#### Common Field Types
+### Common Field Types
 1. Strings: are any combination of characters, alpha-numeric including symbols. Some examples can be an address field, a state code, an open-ended survey response or a product description.
 
 2. Numeric: are numbers which can be whole numbers such as integers or numbers with decimal places. Some examples are sales in dollars, population in a trade area around a store or the age of a person.
@@ -43,11 +43,11 @@ Semi-structured data is data that has some structure to it but still requires so
 
 5. Special Objects: can be objects such as images, maps, report objects, and sound files to name a few examples.
 
-### 2. Data Issues
+## 2. Data Issues
 - Problems we may encounter when working with data
 - Dirty data, missing values, outliers
 
-#### Dirty Data
+### Dirty Data
 Data that contains some kind of errors in them, or are in a format that's unfriendly or unusable.
 
 Examples:
@@ -58,27 +58,27 @@ Examples:
 - Incorrect Data: like dates that are from January 1, 1900. This can happen when a user is working with a system that requires a value but none is available at the time.
 - Unexpected Pattern: data that does not fit with the expected pattern. Example not email addresses are in the proper format that ends with ".com".
 
-#### Dirty Data - Parsing
+### Dirty Data - Parsing
 Parsing is done when dividing data into parts based on some kind of delimiter.
 
 Example: Comma Separated Values file (CSV) data is delimited with commas.
 
-#### Dirty Data - Extra Characters
+### Dirty Data - Extra Characters
 Extra characters could be anything, like currency symbols or number signs.
 
 Example: Quotation marks in Name, extra letter after postal code & currency sign before value
 
-#### Missing Data
+### Missing Data
 
 1. Empty fields: data comes from a CSV file
 2. Null value: data comes from a database
 3. N/A value: typically means not available in programs that we use
 
-#### Missing Data - Why care about missing data?
+### Missing Data - Why care about missing data?
 1. Some statistical algorithms won't work.
 2. Can add BIAS to a model. Which means either over or underestimate of that specific field or parameter.
 
-#### Missing Data - Dealing with Missing Databases
+### Missing Data - Dealing with Missing Databases
 1. Deleting Missing Data
 Deleting missing data is often the default method because of it's simplicity. No decisions that need to be made that might confuse the data. You just get rid of records where there are missing values.
 
@@ -98,25 +98,25 @@ Do imputation process multiple times using a method that will predict the missin
 
 4. Full information Maximum Likelihood
 
-#### Missing Data - Factors to consider
+### Missing Data - Factors to consider
 1. Just how much data is really missing? [more than 95% or less than?]
 2. How the missing data is distributed across the dataset? [majority of what's missing is in a smaller subset of the variables? Are they significant?]
 3. The variable in question with the missing data is numeric or categorical? [unable to imputate vaerage for non-numeric value]
 
-#### Outliers
+### Outliers
 Outliers - Some values just don't seem to fit with the data set as a whole.
 - Numeric: numbers that seem extreme, or way too large, or small compared to the other values in that field.
 - Categorical: value that only appear once out of a large set of data.
 
-#### Outliers - What causes Outliers?
+### Outliers - What causes Outliers?
 1. Incorrect data - System issues to bad data collection methods to just plain typos when entering data.
 2. Abnormal but correct data -
 
-#### Outliers - Why do we care?
+### Outliers - Why do we care?
 - this can mess with our answers to our business questions, whether we're tryng to explain why something happened a certain way or what may happen in the future.
 - correct them if they're wrong or understand the exceptions that are real.
 
-#### Outliers - How to identify?
+### Outliers - How to identify?
 1. Box and Whisker - the value needs to be 1.5 times the Interquartile range beyond the first and third quartile to be considered an outlier.
 
 To calculate the upper fence and the lower fence, here are the exact steps:
@@ -127,11 +127,11 @@ To calculate the upper fence and the lower fence, here are the exact steps:
 
 2. Violin Plot
 
-#### Outliers - How to deal with it?
+### Outliers - How to deal with it?
 1. Remove insignificant outliers
 2. Truncation: where we know that a certain value can only be  below a given maximum and yet a value is reported above that.
 
-### 3. Data Formatting
+## 3. Data Formatting
 Format our data so it is useful
 Data is often not in the format we need
 
@@ -146,7 +146,7 @@ Example aggregate/summarize transactional data that list each product sold withi
 - Summarize other data to the values within that field
 - Create a matrix
 
-### 4. Data Blending
+## 4. Data Blending
 - Blend data together from disparate datasets
 
 ### 1. Unions
@@ -165,7 +165,7 @@ Example aggregate/summarize transactional data that list each product sold withi
 - Most information has a location component to it. E.g. retail example, customers have locations where they live, locations for the stores they shop at, and locations for the distribution center from where stores get their products.
 - Use spatial data from the customer or their point locations to see if they fall within or intersect the trade area.
 
-### Selecting Predictor Variables
+## Selecting Predictor Variables
 
 1. Apply logic to get a list of possible variables
 2. Make sure not using any duplicate variables that represents the exact same thing as another variable.
