@@ -23,7 +23,7 @@ Unstructured data can have no structure to it at all. Since the data isn’t org
 3. Semi-Structure
 Semi-structured data is data that has some structure to it but still requires some work to put it into a structured format of columns and rows. This could be a computer system log file that requires parsing and manipulating to put into a format that makes the data easier to analyze.
 
-#### Data Soruces
+#### Data Sources
 1. Computer files: created from applications like MS Excel or Access, from predictive software like SAS or SPSS.
 2. Databases
 3. Web-based sources
@@ -164,3 +164,15 @@ Example aggregate/summarize transactional data that list each product sold withi
 ### 4. Spatial Matching
 - Most information has a location component to it. E.g. retail example, customers have locations where they live, locations for the stores they shop at, and locations for the distribution center from where stores get their products.
 - Use spatial data from the customer or their point locations to see if they fall within or intersect the trade area.
+
+### Selecting Predictor Variables
+
+1. Apply logic to get a list of possible variables
+2. Make sure not using any duplicate variables that represents the exact same thing as another variable.
+
+Examples:
+Homeowner vs Renter
+Age Group vs Age
+Runs vs Runs per game
+
+3. Check correlations between our variable
