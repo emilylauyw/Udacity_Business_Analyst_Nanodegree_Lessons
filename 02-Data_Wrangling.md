@@ -117,7 +117,7 @@ Outliers - Some values just don't seem to fit with the data set as a whole.
 ### Outliers - How to identify?
 1. Box and Whisker - the value needs to be 1.5 times the Interquartile range beyond the first and third quartile to be considered an outlier.
 
-![IQR](Screenshots/05.jpeg "IQR")
+![IQR](Screenshots/05.jpg "IQR")
 
 To calculate the upper fence and the lower fence, here are the exact steps:
 1 . Calculate 1st quartile Q1 and 3rd quartile Q3 of the dataset. You can use the Excel function QUARTILE.INC or QUARTILE.EXC
