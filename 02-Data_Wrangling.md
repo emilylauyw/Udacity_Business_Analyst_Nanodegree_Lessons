@@ -120,10 +120,10 @@ Outliers - Some values just don't seem to fit with the data set as a whole.
 ![IQR](Screenshots/05.jpg "IQR")
 
 To calculate the upper fence and the lower fence, here are the exact steps:
-1 . Calculate 1st quartile Q1 and 3rd quartile Q3 of the dataset. You can use the Excel function QUARTILE.INC or QUARTILE.EXC
-2 . Calculate the Interquartile Range: IQR = Q3 - Q1
-3 . Add 1.5 * IQR to Q3 to get the upper fence: Upper Fence = Q3 + 1.5 * IQR
-4 . Subtract 1.5 * IQR to Q1 to get the lower fence: Lower Fence = Q1 - 1.5 * IQR
+1. Calculate 1st quartile Q1 and 3rd quartile Q3 of the dataset. You can use the Excel function QUARTILE.INC or QUARTILE.EXC
+2. Calculate the Interquartile Range: IQR = Q3 - Q1
+3. Add 1.5 * IQR to Q3 to get the upper fence: Upper Fence = Q3 + 1.5 * IQR
+4. Subtract 1.5 * IQR to Q1 to get the lower fence: Lower Fence = Q1 - 1.5 * IQR
 
 2. Violin Plot
 
