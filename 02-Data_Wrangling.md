@@ -176,9 +176,9 @@ Example aggregate/summarize transactional data that list each product sold withi
 ### Correlation
 Correlation: a measure of association between two variables
 Correlation coefficient values range from -1 to 1
-1: total positive correlation
-0: no correlation
--1: total negative correlation
+- 1: total positive correlation
+- 0: no correlation
+- -1: total negative correlation
 
 ### What may be a good quality predictor variable?
 Is there inner correlation between or predictor variable?
