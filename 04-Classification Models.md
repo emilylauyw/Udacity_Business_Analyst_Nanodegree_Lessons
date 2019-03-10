@@ -56,6 +56,17 @@
 
 ![Algorithms](Screenshots/08.png "Algorithms")
 
+### Stepwise regression
+- Way to automatically identify which variables are most important to the model and only include them in the model
+- Focus on concepts
+- Work for Logistic and linear regression
+- A process where variable are added and/or removed until the best combination of variables is identified
+
+### Validating Models
+- Validate model against an independent datasets
+
+
+
 2. Decision Trees
 
 
