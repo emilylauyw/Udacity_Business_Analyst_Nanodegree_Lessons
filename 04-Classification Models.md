@@ -11,8 +11,6 @@
 - Random Forests
 - Boosted Models
 
-### 1. What does classification mean?
-
 ### Classification Problems Types
 
 1. Business problems
@@ -27,7 +25,8 @@
 - What color shirt looks best on me?
 - What type of transportation will employee use to go to work?
 
-#### Classification grouping
+#### Classification Grouping
+
 1. Binary: equal 2 groups
 - One that has a yes or no, a 1 or a 0 or a true or false type of value associated with it.
 
@@ -45,7 +44,7 @@
 
 ![Logistic](Screenshots/07.png "Logistic Regression")
 
-### Logistic regression algorithms
+#### Logistic regression algorithms
 - Logit transformation equation
   - Focus on concepts
   - How to apply them
@@ -56,24 +55,45 @@
 
 ![Algorithms](Screenshots/08.png "Algorithms")
 
-### Stepwise regression
+#### Stepwise regression
 - Way to automatically identify which variables are most important to the model and only include them in the model
 - Focus on concepts
 - Work for Logistic and linear regression
 - A process where variable are added and/or removed until the best combination of variables is identified
 
-### Validating Models
+#### Validating Models
 - Validate model against an independent datasets
-
-
+- What is the overall accuracy of the model?
 
 2. Decision Trees
+- Analyzes data as if they were a series of decisions.
 
+#### Root Node Error
+- A percentage of how many of the data points went to the incorrect terminal node (predicted incorrectly) when all of the data points are validated against themselves within the entire training set (the Estimation dataset).
 
+![Root Node Error](Screenshots/09.jpg "Root Node Error")
 
+#### Pruning Table
+- Lists out the levels in the decision tree with their related error terms with cross-validation samples.
 
-### 2. Compare binary models
+![Pruning Table](Screenshots/10.jpg "Pruning Table")
 
-### 3. Predict non-binary data
+#### Confusion Matrix
+- A matrix (or table) that lists out all of the possible prediction results when we validate our model against our validation set. This confusion matrix is one of the best methods to review the accuracy and precision of your model as well as to understand any model bias in classifying your data points.
 
-### 4. Solve a classification business problem
+![Confusion Matrix](Screenshots/11.png "Confusion Matrix")
+
+#### Variable Importance Plot
+- indicate the importance of the variable
+
+![Variable Importance Plot](Screenshots/12.png "Variable Importance Plot")
+
+#### Scoring the model
+- Means when we put a model into productions
+
+## Binary Classification Problems
+
+### 3 Types of Models:
+1. Decision Trees
+2. Forest Models
+3. Boosted Models
