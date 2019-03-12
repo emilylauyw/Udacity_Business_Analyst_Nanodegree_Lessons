@@ -95,5 +95,8 @@
 
 ### 3 Types of Models:
 1. Decision Trees
+-
 2. Forest Models
+-
 3. Boosted Models
+- 
