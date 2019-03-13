@@ -95,8 +95,11 @@
 
 ### 3 Types of Models:
 1. Decision Trees
--
+- Decision Trees are prone to an error called over fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should.
+
+- A technique that helps to eliminate this issues is the Random Forest Model.
+
 2. Forest Models
 -
 3. Boosted Models
-- 
+-
