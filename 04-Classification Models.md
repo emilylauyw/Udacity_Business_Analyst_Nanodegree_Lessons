@@ -84,7 +84,7 @@
 ![Confusion Matrix](Screenshots/11.png "Confusion Matrix")
 
 #### Variable Importance Plot
-- indicate the importance of the variable
+- Indicate the importance of the variable
 
 ![Variable Importance Plot](Screenshots/12.png "Variable Importance Plot")
 
@@ -96,10 +96,31 @@
 ### 3 Types of Models:
 1. Decision Trees
 - Decision Trees are prone to an error called over fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should.
-
 - A technique that helps to eliminate this issues is the Random Forest Model.
 
 2. Forest Models
--
+- A Forest Model creates hundreds of trees, called an ensemble of decision trees
+- Each tree is created by different randomly generated chunks of the original data.
+It looks at the results as a whole to make a prediction.
+- Each individual tree created still has overfitting issues, but when you look at the results as a whole, the overfitting gets averaged out by all of the other trees.
+
+#### Things to look out for in forest model result:
+a. Out of the bag error rate
+- How well the model performed?
+- How solid the model performs with estimate data?
+- Similar to R-squared value
+
+b. Confusion Matrix
+- How well the model performed?
+- Where error occurred in classifying data?
+
+c. Percentage Error for Different Number of Trees graph
+- Helps us see what the correct number of trees is to use, so we can avoid over computing.
+- What we are looking for is the number of trees it takes to minimize the error of each of the items, so basically, where does it flatline?
+- After we determine the ideal number of trees, we can change subsequent Forest Models and run our data with the smaller number of Decision Trees.
+
+d. Variable Importance Plot
+- Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
+
 3. Boosted Models
 -
