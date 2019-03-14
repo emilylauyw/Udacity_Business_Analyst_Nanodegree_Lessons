@@ -94,17 +94,17 @@
 ## Binary Classification Problems
 
 ### 3 Types of Models:
-1. Decision Trees
+#### 1. Decision Trees
 - Decision Trees are prone to an error called over fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should.
 - A technique that helps to eliminate this issues is the Random Forest Model.
 
-2. Forest Models
+#### 2. Forest Models
 - A Forest Model creates hundreds of trees, called an ensemble of decision trees
 - Each tree is created by different randomly generated chunks of the original data.
 It looks at the results as a whole to make a prediction.
 - Each individual tree created still has overfitting issues, but when you look at the results as a whole, the overfitting gets averaged out by all of the other trees.
 
-#### Things to look out for in forest model result:
+##### Things to look out for in Forest Model result:
 a. Out of the bag error rate
 - How well the model performed?
 - How solid the model performs with estimate data?
@@ -122,5 +122,5 @@ c. Percentage Error for Different Number of Trees graph
 d. Variable Importance Plot
 - Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
 
-3. Boosted Models
+#### 3. Boosted Models
 -
