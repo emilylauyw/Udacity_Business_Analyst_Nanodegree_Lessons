@@ -123,4 +123,17 @@ d. Variable Importance Plot
 - Which predictor variables matter the most in relation to this model? This is very helpful in determining which variables are most associated with our data on and we can focus on for future analysis.
 
 #### 3. Boosted Models
--
+- Forest Models might give us a better estimate than decision trees, but they're computationally intensive.
+- What we need is a model that can be both accurate AND fast. What we'll use to achieve this balance is known as the Boosted Model.
+
+##### How the Boosted model avoids overfitting
+- Instead of creating a bunch of random trees, the boosted model makes one tree.
+- Algorithm performs an analysis on the errors of the tree to identify the biggest source of error.
+- Changes the tree to reduce that error.
+- Does the analysis again to find the next biggest error.
+- Makes a change to reduce it.
+- Does this over and over until it can’t make the tree any better and we have our finished Boosted Model.
+
+##### Things to look out for in a boosted model report:
+- Variable Importance Plot: Which variables deliver the most insight to the target variable?
+- Number of Iterations Assessment Plot: How many trees are needed to create the optimal result?
