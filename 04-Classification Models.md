@@ -93,6 +93,12 @@
 
 ## Binary Classification Problems
 
+### Classifying Non-Binary Data
+- Examined Data
+- Created Samples of Data Sets
+- Tested Samples with 3 Model Types
+- Compared Models with Validation Data Set
+
 ### 3 Types of Models:
 #### 1. Decision Trees
 - Decision Trees are prone to an error called over fitting, where the model fits the sample data too well, and as a result, does not predict future results as well as it should.
