@@ -14,10 +14,10 @@
 - A unit can be a person, store, a run on a production line, a view to a website
 
 ### Split groups to 2 comparable groups:
-1. Treatment Group: the collection of units that will be getting the treatment.
+#### 1. Treatment Group: the collection of units that will be getting the treatment.
 - Treatment = change you are making
 
-2. Control Group
+#### 2. Control Group
 - Baseline comparison for the treatment group.
 - No treatment is applied
 
@@ -25,7 +25,7 @@
 - Variable you can change to see how it affects the target variable.
 
 ### Control Variable
-- similar to predictor variables in modelling
+- Similar to predictor variables in modelling
 
 
 
