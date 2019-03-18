@@ -51,7 +51,7 @@ control: use to make sure that the treatment units and control units are as simi
 - Used in situation where very little opportunity to control variables, and there the volume and velocity of data is high enough that you're not worries about bias
 - Examples: Website-based experiments & Phone system-based Experiments
 
-###Treatment & Control Variables
+### Treatment & Control Variables
 - Ensure that both the treatment and control groups are representative of the population.
 
 ### To design a randomized experiment
@@ -97,8 +97,8 @@ control: use to make sure that the treatment units and control units are as simi
 
 ### How to select Treatment Units
 1. Identify outliers
-- In general, less than ten treatment units is very low
-- the smaller the number of treatment units, the less confidence we will have that the experiment results are valid.
+  - In general, less than ten treatment units is very low
+  - the smaller the number of treatment units, the less confidence we will have that the experiment results are valid.
 2. Decide number of treatment units
 
 ### How to select Control Units
