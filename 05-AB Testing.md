@@ -101,4 +101,6 @@ control: use to make sure that the treatment units and control units are as simi
   - the smaller the number of treatment units, the less confidence we will have that the experiment results are valid.
 2. Decide number of treatment units
 
-### How to select Control Units
+### Control Units
+- Baseline for the analysis of the experiments
+- More than 1 control unit for each treatment unit increases confidence
