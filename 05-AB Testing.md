@@ -104,3 +104,25 @@ control: use to make sure that the treatment units and control units are as simi
 ### Control Units
 - Baseline for the analysis of the experiments
 - More than 1 control unit for each treatment unit increases confidence
+
+### T-Test
+- Randomized Design: compared the mean and variance of the treatment observations, to the mean and variance of the control observations
+- Matched Pair: the mean and variance of the difference between each matched pair, to see if its significantly different than zero.
+
+## Matched Pair Practice
+
+### Price Elasticity of Demand
+- Shows the responsiveness of the quantity demanded of a good or service to a change in its price
+- Price elasticity of demand is a term in economics often used when discussing price sensitivity." Investopedia.
+
+### Discrete Variable
+- Can't be used to match treatments to control directly.
+- Units need to be matched with those that share a discrete characteristic
+
+### Continuous Trends
+- Growth in Store traffic:
+- Seasonal Patterns in Sales Volume
+
+### AB Trends Tool
+- Need an entire year of data + minimum 6 periods
+- E.g. If experiment is 14 weeks long, need 6 weeks of historical data + 52 weeks for calculating trends. Total 58 weeks.
