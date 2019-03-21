@@ -70,10 +70,10 @@ The Predictive Methodology Map is a guide to determine the appropriate analytica
 The map outlines two main scenarios for a business problem:
 
 1. Data analysis
-Data analysis refers to the more standard approaches of blending together data and reporting on trends and statistics and helps answer business questions that involve understanding more about the dataset such as "On average, how many people order coffee and a donut per transaction in my store in any given week?"
+- Refers to the more standard approaches of blending together data and reporting on trends and statistics and helps answer business questions that involve understanding more about the dataset such as "On average, how many people order coffee and a donut per transaction in my store in any given week?"
 
 2. Predictive analysis
-Predictive analysis will help businesses predict future behavior based on existing data such as "Given the average coffee order, how much coffee can I expect to sell next week if I were to add a new brand of coffee?"
+- Help businesses predict future behavior based on existing data such as "Given the average coffee order, how much coffee can I expect to sell next week if I were to add a new brand of coffee?"
 
 ![Methodology](Screenshots/02.jpg "Methodology")
 
