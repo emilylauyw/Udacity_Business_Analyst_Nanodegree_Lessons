@@ -54,7 +54,7 @@
 ## ETS Models (Exponential Smoothing)
 - Use weighed averages of past observations, giving more weight to the most recent observation with weights gradually getting smaller as the observation gets older.
 
-### E: Erorr, T: trend, S: Seasonality
+### E: Error, T: trend, S: Seasonality
 
 ### How do we determine how to apply the error, trend and seasonality terms of an ETS mode?
 
@@ -95,10 +95,49 @@ Four ETS models that can help forecast these possible time-series scenarios.
 3. Exponential Trend Method
 4. Holt-Winters Seasonal Method
 
+### Simple Exponential Smoothing model
+- Apply when time series does not have a trend line and does not have seasonality component.
 
+### Holt's Linear Trend Method (Double Exponential Smoothing)
+- Apply to any non seasonal data set.
 
+### Exponential Trend Method:
+- Apply to any non seasonal data set.
 
+### Determine how to apply each component, Error (E), Trend (T), and Seasonality (S):
+
+#### Error
+- Looking at the error (labeled remainer in Alteryx) component in the time series decomposition plot in Alteryx, you see the following.
+
+![Error](Screenshots/18.jpg "")
+
+- The error has constant variance over time (peaks and valleys are about the same size), then you apply it additively.
+- The error is growing or shrinking over time, then you would apply the error multiplicatively.
+- In this case, it's a bit difficult to determine. Your first inclination was likely to apply it additively. However, if you let the ETS Tool decide (select Auto under the Model Type - Error Type), it selects multiplicative.
+
+#### Trend
+- Looking at the trend component in the time series decomposition plot in Alteryx, you see the following.
+
+![Trend](Screenshots/19.jpg "")
+
+- If the trend is linear then you apply it additively.
+- If the trend line grows or shrinks exponentially, then you would apply it multiplicatively.
+- Again, your first inclination was likely to apply trend additively. However, if you let the ETS Tool decide (select Auto under the Model Type - Trend Type), it selects N or None.
+
+- If you notice how the trend line changes direction towards the end of the period and goes back up, the ETS tool sees this line as a none trend line. Because the ETS tool is not able to determine whether the change is linear or exponential, in this scenario you would not apply trend in your ETS model.
+
+#### Seasonality
+Looking at the seasonal component in the time series decomposition plot in Alteryx, you see the following.
+
+![Seasonality](Screenshots/20.jpg "")
+
+- Remember, if the peaks and valleys for seasonality are constant over time, you apply it additively. If the seasonality grows or shrinks overtime, then you would apply it multiplicatively. For seasonality, you don't have to consider if the change is linear or exponential, only if it is growing or shrinking over time. In this case, seasonality is growing slightly overtime (the peaks are increasing ever so slowly), so you would apply it multiplicatively. The ETS Tool's auto selection also indicates multiplicative seasonality.
 
 ## ARIMA Models (Autoregressive Integrated Moving Average)
+
+### A:Auto, R:Regressive, I: Integrated, M: Moving, A: average
+
+
+
 
 ## Analyzing and Visualizing Results
