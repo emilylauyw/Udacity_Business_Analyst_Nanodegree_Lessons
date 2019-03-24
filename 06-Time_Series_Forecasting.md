@@ -23,8 +23,9 @@
 
 ### Time series is a sequence of data points with the following characteristics:
 1. Covers a continuous time interval
-2. Equal spacing between every two consecutive measurements
-3. Each time unit within the time interval has at most one data point
+2. Of sequential measurements across the interval
+3. Equal spacing between every two consecutive measurements
+4. Each time unit within the time interval has at most one data point
 
 ### Average Method
 - The best predictor of what will happen tomorrow is the average of everything that has happened up until now.
@@ -134,10 +135,17 @@ Looking at the seasonal component in the time series decomposition plot in Alter
 - Remember, if the peaks and valleys for seasonality are constant over time, you apply it additively. If the seasonality grows or shrinks overtime, then you would apply it multiplicatively. For seasonality, you don't have to consider if the change is linear or exponential, only if it is growing or shrinking over time. In this case, seasonality is growing slightly overtime (the peaks are increasing ever so slowly), so you would apply it multiplicatively. The ETS Tool's auto selection also indicates multiplicative seasonality.
 
 ## ARIMA Models (Autoregressive Integrated Moving Average)
+Stands for A:Auto, R:Regressive, I: Integrated, M: Moving, A: average
 
-### A:Auto, R:Regressive, I: Integrated, M: Moving, A: average
+### 2 Types of ARIMA models
+1. Seasonal
+2. Non Seasonal
 
+### Autocorrelation
+- How correlated a time series is with its past values
 
+### Autocorrelation function plot (Correlogram)
+- Shows a series correlated with itself like by x time units.
+- used to see the correlation between the points up to, and including, our lag unit.
 
-
-## Analyzing and Visualizing Results
+![Correlogram](Screenshots/21.jpg "")
