@@ -58,12 +58,31 @@
 ### E: Error, T: trend, S: Seasonality
 
 ### How do we determine how to apply the error, trend and seasonality terms of an ETS mode?
-
+- A time series decomposition plot allows you to observe the seasonality, trend, and error/remainder terms
+of a time series.
 ![Time series decomposition plot](Screenshots/16.jpg "Plot")
 
 ### Identifying Additive or Multiplicative terms
 
 ![Addition vs Multiplication](Screenshots/17.jpg "")
+
+- An ETS model has three main components: error, trend, and seasonality. Each can be applied either
+additively, multiplicatively, or not at all.
+
+#### Trend
+- If the trend plot is linear then we apply it additively (A).
+- If the trend line grows or shrinks exponentially, we apply it multiplicatively (M).
+- If there is no clear trend, no trend component is included
+(N).
+
+#### Seasonal
+- If the peaks and valleys for seasonality are constant over time, we apply it additively (A).
+- If the size of the seasonal fluctuations tends to increase or decrease with the level of time series, we apply it multiplicatively (M).
+- If there is no seasonality, it is not applied (N).
+
+#### Error
+- If the error plot has constant variance over time (peaks and valleys are about the same size), we apply it additively (A).
+- If the error plot is fluctuating between large and small errors over time, we apply it multiplicatively (M).
 
 ### Time Series Scenarios
 - The possible time series (TS) scenarios can be recognized by asking the following questions:
@@ -134,7 +153,7 @@ Looking at the seasonal component in the time series decomposition plot in Alter
 
 - Remember, if the peaks and valleys for seasonality are constant over time, you apply it additively. If the seasonality grows or shrinks overtime, then you would apply it multiplicatively. For seasonality, you don't have to consider if the change is linear or exponential, only if it is growing or shrinking over time. In this case, seasonality is growing slightly overtime (the peaks are increasing ever so slowly), so you would apply it multiplicatively. The ETS Tool's auto selection also indicates multiplicative seasonality.
 
-## ARIMA Models (Autoregressive Integrated Moving Average)
+### ARIMA Models (Autoregressive Integrated Moving Average)
 Stands for A:Auto, R:Regressive, I: Integrated, M: Moving, A: average
 
 ### 2 Types of ARIMA models
@@ -149,3 +168,10 @@ Stands for A:Auto, R:Regressive, I: Integrated, M: Moving, A: average
 - used to see the correlation between the points up to, and including, our lag unit.
 
 ![Correlogram](Screenshots/21.jpg "")
+
+## Analyzing and Visualizing Results
+
+### Holdout Sample
+- A subset of the time series that you withhold and then use to check the accuracy of predictions from your model.
+- Size of the holdout sample will depend on how long the time series is and how far you would like to forecast.
+- Ideally, the size should be at least the amount of periods you are forecasting for.
