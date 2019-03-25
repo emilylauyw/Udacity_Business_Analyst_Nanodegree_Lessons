@@ -64,7 +64,7 @@ of a time series.
 
 ### Identifying Additive or Multiplicative terms
 
-![Addition vs Multiplication](Screenshots/17.jpg "")
+![Addition vs Multiplication](Screenshots/17.jpg "AdditionVsMultiplication")
 
 - An ETS model has three main components: error, trend, and seasonality. Each can be applied either
 additively, multiplicatively, or not at all.
@@ -129,7 +129,7 @@ Four ETS models that can help forecast these possible time-series scenarios.
 #### Error
 - Looking at the error (labeled remainer in Alteryx) component in the time series decomposition plot in Alteryx, you see the following.
 
-![Error](Screenshots/18.jpg "")
+![Error](Screenshots/18.jpg "Error")
 
 - The error has constant variance over time (peaks and valleys are about the same size), then you apply it additively.
 - The error is growing or shrinking over time, then you would apply the error multiplicatively.
@@ -138,7 +138,7 @@ Four ETS models that can help forecast these possible time-series scenarios.
 #### Trend
 - Looking at the trend component in the time series decomposition plot in Alteryx, you see the following.
 
-![Trend](Screenshots/19.jpg "")
+![Trend](Screenshots/19.jpg "Trend")
 
 - If the trend is linear then you apply it additively.
 - If the trend line grows or shrinks exponentially, then you would apply it multiplicatively.
@@ -149,7 +149,7 @@ Four ETS models that can help forecast these possible time-series scenarios.
 #### Seasonality
 Looking at the seasonal component in the time series decomposition plot in Alteryx, you see the following.
 
-![Seasonality](Screenshots/20.jpg "")
+![Seasonality](Screenshots/20.jpg "Seasonality")
 
 - Remember, if the peaks and valleys for seasonality are constant over time, you apply it additively. If the seasonality grows or shrinks overtime, then you would apply it multiplicatively. For seasonality, you don't have to consider if the change is linear or exponential, only if it is growing or shrinking over time. In this case, seasonality is growing slightly overtime (the peaks are increasing ever so slowly), so you would apply it multiplicatively. The ETS Tool's auto selection also indicates multiplicative seasonality.
 
@@ -167,7 +167,7 @@ Stands for A:Auto, R:Regressive, I: Integrated, M: Moving, A: average
 - Shows a series correlated with itself like by x time units.
 - used to see the correlation between the points up to, and including, our lag unit.
 
-![Correlogram](Screenshots/21.jpg "")
+![Correlogram](Screenshots/21.jpg "Correlogram")
 
 ## Analyzing and Visualizing Results
 
