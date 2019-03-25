@@ -16,6 +16,15 @@
 #### Distance
 - A way to quantify or measure similarity
 
+#### Learning models
+- Supervised: modeling process learns from the target (e.g. various predictive methods such as linear or logistic regression with predictor variables and target variable).
+- Unsupervised: No target variable that is used in creating the model. (e.g. clustering)
+
+- Clustering
+Learn from multiple variables supplied in the data. It then groups the objects without being told the logic by which to do it. After this process, it ends up creating a new variable known as the cluster number.
+
+
+
 
 
 
