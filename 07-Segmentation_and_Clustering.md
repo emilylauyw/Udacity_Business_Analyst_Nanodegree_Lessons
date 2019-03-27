@@ -39,12 +39,17 @@
 ## Variable Reduction
 - Account for the most of the variance in all of the observed variables.
 
-
-
-
-
-
-
 ## Clustering models
+
+### Hierarchial
+- Determining the closest distance between entities.
+- Works better on a small set of objects and can be slow with a larger set of objects due to the large number of merge or split decisions that it makes.
+
+### K-Centroid
+- Finding the objects that are closest to the centroid.
+- Works well with a larger set of objects and tends to be more efficient in creating the clustering solution.
+- Works well with rounded sets of data or where the clusters are equal sizes in densities.
+
+
 
 ## Validating and Applying Clusters
