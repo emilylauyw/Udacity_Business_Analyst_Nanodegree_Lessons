@@ -165,7 +165,7 @@ Example aggregate/summarize transactional data that list each product sold withi
 - Most information has a location component to it. E.g. retail example, customers have locations where they live, locations for the stores they shop at, and locations for the distribution center from where stores get their products.
 - Use spatial data from the customer or their point locations to see if they fall within or intersect the trade area.
 
-## Selecting Predictor Variables
+## 7. Selecting Predictor Variables
 
 1. Apply logic to get a list of possible variables
 
@@ -191,3 +191,29 @@ Is there inner correlation between or predictor variable?
 ### Correlation between predictor variables
 - Not much issues during building of a classification model
 - Cause issues during the prediction time
+
+## 9. Basic SQL
+
+### SQL: Structured Query Language
+- to utilize SQL to analyze data and answer business questions.
+
+### Entity Relationship Diagrams （ERD）
+- A common way to view data in a database. Below is the ERD for the database we will use from Parch & Posey. These diagrams help you visualize the data you are analyzing including:
+
+The names of the tables.
+The columns in each table.
+The way the tables work together.
+
+
+
+## 10. SQL Join
+
+## 11. SQL Aggregations
+
+## 12. SQL Subqueries & Temporary Tables
+
+## 13. SQL Data Cleaning
+
+## 14. [Advanced] SQL Window Functions
+
+## 15. [Advanced] SQL Advanced JOINs & Performance Tuning
