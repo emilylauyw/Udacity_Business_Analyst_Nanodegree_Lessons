@@ -225,6 +225,28 @@ An entire column is considered quantitative, discrete, or as some sort of string
 3. Consistent column types are one of the main reasons working with databases is fast.
 Often databases hold a LOT of data. So, knowing that the columns are all of the same type of data means that obtaining data from a database can still be fast.
 
+### Statements
+- Tell the database what you'd like to do with the data.
+
+### Types of statements
+- A few statements include:
+
+1. CREATE TABLE is a statement that creates a new table in a database.
+2. DROP TABLE is a statement that removes a table in a database.
+3. SELECT allows you to read data and display it. This is called a query.
+
+`SELECT ... FROM ....`
+
+1. SELECT indicates which column(s) you want to be given the data for.
+
+2. FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
+
+If you want to be provided with the data from all columns in the table, you use `*`, like so:
+
+`SELECT * FROM orders`
+
+LIMIT statement: useful when you want to see just the first few rows of a table. This can be much faster for loading than if we load the entire dataset.
+
 
 
 
