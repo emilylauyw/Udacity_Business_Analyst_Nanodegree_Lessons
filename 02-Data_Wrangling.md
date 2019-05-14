@@ -197,7 +197,7 @@ Is there inner correlation between or predictor variable?
 ### SQL: Structured Query Language
 - to utilize SQL to analyze data and answer business questions.
 
-### Entity Relationship Diagrams （ERD）
+### Entity Relationship Diagram（ERD）
 - A common way to view data in a database.
 - help to visualize the data you are analyzing
 
@@ -237,19 +237,46 @@ Often databases hold a LOT of data. So, knowing that the columns are all of the 
 
 `SELECT ... FROM ....`
 
-1. SELECT indicates which column(s) you want to be given the data for.
+*SELECT* indicates which column(s) you want to be given the data for.
 
-2. FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
+*FROM* specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
 
 If you want to be provided with the data from all columns in the table, you use `*`, like so:
 
 `SELECT * FROM orders`
 
-LIMIT statement: useful when you want to see just the first few rows of a table. This can be much faster for loading than if we load the entire dataset.
+*LIMIT statement*: useful when you want to see just the first few rows of a table. This can be much faster for loading than if we load the entire dataset.
 
+```
+SELECT *
+FROM orders
+LIMIT 10;
+```
 
+*ORDER BY statement*: allows us to sort our results using the data in any column
+- The ORDER BY statement always comes in a query after the SELECT and FROM statements, but before the LIMIT statement.
+- can order by more than one column at a time, sorting occurs using the leftmost column in your list first, then the next column from the left, and so on.
 
+```
+SELECT id, account_id, total_amt_usd
+FROM orders
+ORDER BY account_id, total_amt_usd DESC
+LIMIT 5;
+```
 
+*WHERE statement*: display subsets of tables based on conditions that must be met.
+
+Common symbols used in WHERE statements include:
+```> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+= (equal to)
+!= (not equal to)
+```
+
+- The WHERE statement always comes in a query after the SELECT and FROM statements, but before the ORDER BY and LIMIT statement.
+- can also be used with non-numeric data.
 
 
 
