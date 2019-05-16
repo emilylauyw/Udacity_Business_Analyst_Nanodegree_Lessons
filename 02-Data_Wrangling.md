@@ -278,6 +278,18 @@ Common symbols used in WHERE statements include:
 - The WHERE statement always comes in a query after the SELECT and FROM statements, but before the ORDER BY and LIMIT statement.
 - can also be used with non-numeric data.
 
+*Derived Columns*: Creating a new column that is a combination of existing columns
+- Usually you want to give a name, or "alias," to your new column using the AS keyword.
+
+```
+SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;
+```
+
+
+
+
+
 
 
 ## 10. SQL Join
